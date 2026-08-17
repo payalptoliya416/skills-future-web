@@ -6,249 +6,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skills Future</title>
     <!-- --fonts -->
-    <link rel="stylesheet" href="assets/css/fonts.css"/>
-    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet"/>
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft"
+        rel="stylesheet" />
     <!-- --font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- --bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <!-- --style -->
-    <link rel="stylesheet" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
 
 </head>
 
 <body>
-        <div class="main ">
+    <div class="main ">
 
-            <!-- ================= TOP LOGO ================= -->
-            <div class="cover-letter-art">
-                <a href="job-listing.html" class="btn back-btn">
-                    <i class="fa-solid fa-arrow-left"></i>
-                    <span>Back</span>
-                </a>
+        <!-- ================= TOP LOGO ================= -->
+        <div class="cover-letter-art">
+            <a href="job-listing.html" class="btn back-btn">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Back</span>
+            </a>
+        </div>
+
+        <!-- ================= CONTENT ================= -->
+        <div class="career-interests-questionnaire container">
+            <h1 class="career-questionnaire-title"> Schedules</h1>
+
+            <div class="schedule-tabs">
+                <button type="button" class="schedule-tab-btn active" data-schedule-tab="workshops">Workshops</button>
+                <button type="button" class="schedule-tab-btn" data-schedule-tab="popup">Pop Up</button>
             </div>
 
-            <!-- ================= CONTENT ================= -->
-            <div class="career-interests-questionnaire container">
-                <h1 class="career-questionnaire-title"> Schedules</h1>
+            <button type="button" class="see-past-btn">
+                <i class="fa-solid fa-angles-up"></i>
+                See Past Workshops
+            </button>
 
-                <div class="schedule-tabs">
-                    <button type="button" class="schedule-tab-btn active" data-schedule-tab="workshops">Workshops</button>
-                    <button type="button" class="schedule-tab-btn" data-schedule-tab="popup">Pop Up</button>
-                </div>
+            <div class="schedule-timeline" data-tab-panel="workshops">
 
-                <button type="button" class="see-past-btn">
-                    <i class="fa-solid fa-angles-up"></i>
-                    See Past Workshops
-                </button>
-
-                <div class="schedule-timeline" data-tab-panel="workshops">
-
-                    <div class="schedule-row schedule-live-row">
-                        <div class="schedule-track">
-                            <span class="schedule-live-dot"><span></span></span>
-                            <!-- <span class="schedule-line"></span> -->
-                        </div>
-                        <div class="schedule-live-label">Happening Now</div>
+                <div class="schedule-row schedule-live-row">
+                    <div class="schedule-track">
+                        <span class="schedule-live-dot"><span></span></span>
+                        <!-- <span class="schedule-line"></span> -->
                     </div>
-
-                    <label class="schedule-row schedule-item schedule-item--first">
-                        <input type="radio" name="schedule-item" class="schedule-item-input" checked/>
-                        <div class="schedule-track">
-                            <!-- <span class="schedule-line schedule-line--top"></span> -->
-                            <!-- <span class="schedule-dot"></span> -->
-                            <span class="schedule-line schedule-line--bottom"></span>
-                        </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">10:00 AM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
-
-                    <label class="schedule-row schedule-item">
-                        <input type="radio" name="schedule-item" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <!-- <span class="schedule-line schedule-line--top"></span> -->
-                            <span class="schedule-dot"></span>
-                            <span class="schedule-line schedule-line--bottom"></span>
-                        </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">12:00 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
-
-                    <label class="schedule-row schedule-item">
-                        <input type="radio" name="schedule-item" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <!-- <span class="schedule-line schedule-line--top"></span> -->
-                            <span class="schedule-dot"></span>
-                            <span class="schedule-line schedule-line--bottom"></span>
-                        </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">1:00 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
-
-                    <label class="schedule-row schedule-item">
-                        <input type="radio" name="schedule-item" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <!-- <span class="schedule-line schedule-line--top"></span> -->
-                            <span class="schedule-dot"></span>
-                            <span class="schedule-line schedule-line--bottom"></span>
-                        </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">2:00 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
-
-                    <label class="schedule-row schedule-item">
-                        <input type="radio" name="schedule-item" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <!-- <span class="schedule-line schedule-line--top"></span> -->
-                            <span class="schedule-dot"></span>
-                            <span class="schedule-line schedule-line--bottom"></span>
-                        </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">3:00 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
-
-                    <label class="schedule-row schedule-item schedule-item--last">
-                        <input type="radio" name="schedule-item" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <!-- <span class="schedule-line schedule-line--top"></span> -->
-                            <span class="schedule-dot"></span>
-                        </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">4:00 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
-
+                    <div class="schedule-live-label">Happening Now</div>
                 </div>
 
-                <div class="schedule-timeline" data-tab-panel="popup" hidden>
-
-                    <div class="schedule-row schedule-live-row">
-                        <div class="schedule-track">
-                            <span class="schedule-live-dot"><span></span></span>
-                        </div>
-                        <div class="schedule-live-label">Happening Now</div>
+                <label class="schedule-row schedule-item schedule-item--first">
+                    <input type="radio" name="schedule-item" class="schedule-item-input" checked />
+                    <div class="schedule-track">
+                        <!-- <span class="schedule-line schedule-line--top"></span> -->
+                        <!-- <span class="schedule-dot"></span> -->
+                        <span class="schedule-line schedule-line--bottom"></span>
                     </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">10:00 AM</span>
+                        </div>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
 
-                    <label class="schedule-row schedule-item schedule-item--first">
-                        <input type="radio" name="schedule-item-popup" class="schedule-item-input" checked/>
-                        <div class="schedule-track">
-                            <span class="schedule-line schedule-line--bottom"></span>
+                <label class="schedule-row schedule-item">
+                    <input type="radio" name="schedule-item" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <!-- <span class="schedule-line schedule-line--top"></span> -->
+                        <span class="schedule-dot"></span>
+                        <span class="schedule-line schedule-line--bottom"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">12:00 PM</span>
                         </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">11:00 AM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
 
-                    <label class="schedule-row schedule-item">
-                        <input type="radio" name="schedule-item-popup" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <span class="schedule-dot"></span>
-                            <span class="schedule-line schedule-line--bottom"></span>
+                <label class="schedule-row schedule-item">
+                    <input type="radio" name="schedule-item" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <!-- <span class="schedule-line schedule-line--top"></span> -->
+                        <span class="schedule-dot"></span>
+                        <span class="schedule-line schedule-line--bottom"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">1:00 PM</span>
                         </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">1:30 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
 
-                    <label class="schedule-row schedule-item schedule-item--last">
-                        <input type="radio" name="schedule-item-popup" class="schedule-item-input"/>
-                        <div class="schedule-track">
-                            <span class="schedule-dot"></span>
+                <label class="schedule-row schedule-item">
+                    <input type="radio" name="schedule-item" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <!-- <span class="schedule-line schedule-line--top"></span> -->
+                        <span class="schedule-dot"></span>
+                        <span class="schedule-line schedule-line--bottom"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">2:00 PM</span>
                         </div>
-                        <div class="schedule-card">
-                            <div class="schedule-card-head">
-                                <h3 class="schedule-card-title">Lorem ipsum</h3>
-                                <span class="schedule-card-time">3:30 PM</span>
-                            </div>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
-                            <span class="schedule-card-arrow">
-                                <i class="fa-solid fa-arrow-right"></i>
-                            </span>
-                        </div>
-                    </label>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
 
-                </div>
+                <label class="schedule-row schedule-item">
+                    <input type="radio" name="schedule-item" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <!-- <span class="schedule-line schedule-line--top"></span> -->
+                        <span class="schedule-dot"></span>
+                        <span class="schedule-line schedule-line--bottom"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">3:00 PM</span>
+                        </div>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
+
+                <label class="schedule-row schedule-item schedule-item--last">
+                    <input type="radio" name="schedule-item" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <!-- <span class="schedule-line schedule-line--top"></span> -->
+                        <span class="schedule-dot"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">4:00 PM</span>
+                        </div>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
+
             </div>
 
+            <div class="schedule-timeline" data-tab-panel="popup" hidden>
+
+                <div class="schedule-row schedule-live-row">
+                    <div class="schedule-track">
+                        <span class="schedule-live-dot"><span></span></span>
+                    </div>
+                    <div class="schedule-live-label">Happening Now</div>
+                </div>
+
+                <label class="schedule-row schedule-item schedule-item--first">
+                    <input type="radio" name="schedule-item-popup" class="schedule-item-input" checked />
+                    <div class="schedule-track">
+                        <span class="schedule-line schedule-line--bottom"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">11:00 AM</span>
+                        </div>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
+
+                <label class="schedule-row schedule-item">
+                    <input type="radio" name="schedule-item-popup" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <span class="schedule-dot"></span>
+                        <span class="schedule-line schedule-line--bottom"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">1:30 PM</span>
+                        </div>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
+
+                <label class="schedule-row schedule-item schedule-item--last">
+                    <input type="radio" name="schedule-item-popup" class="schedule-item-input" />
+                    <div class="schedule-track">
+                        <span class="schedule-dot"></span>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-card-head">
+                            <h3 class="schedule-card-title">Lorem ipsum</h3>
+                            <span class="schedule-card-time">3:30 PM</span>
+                        </div>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <p class="schedule-card-desc">Lorem ipsum dolor sit amet</p>
+                        <span class="schedule-card-arrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+                </label>
+
+            </div>
+        </div>
 
 
 
 
-<!-- Footer Start -->
 
-<footer>
+        <!-- Footer Start -->
+
+        <footer>
             <div class="bottom-nav">
 
                 <!-- Left Option: Job Listings -->
@@ -272,11 +273,11 @@
                 </a>
             </div>
         </footer>
-    
+
 
     </div>
 
-    
+
     <!-- --bootstrap-- -->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <!-- --main js-- -->
