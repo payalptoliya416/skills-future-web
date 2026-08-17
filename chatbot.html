@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future</title>
+    <!-- --fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css"/>
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet"/>
+    <!-- --font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <!-- --style -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+</head>
+
+<body>
+
+    <div class="chatbot-page">
+        <div class="chatbot-widget">
+
+            <!-- ================= HEADER ================= -->
+            <div class="chatbot-header">
+                <h1 class="chatbot-title">AI Chatbot</h1>
+                <button type="button" class="chatbot-close" aria-label="Close chatbot">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <!-- ================= MESSAGES ================= -->
+            <div class="chatbot-messages">
+
+                <div class="chatbot-msg chatbot-msg--bot">
+                    <span class="chatbot-avatar">
+                        <svg viewBox="0 0 40 40" fill="none">
+                            <rect x="2" y="6" width="36" height="30" rx="12" fill="url(#botGradient1)"/>
+                            <circle cx="20" cy="4" r="2.4" fill="#0FBFA6"/>
+                            <rect x="18.8" y="2" width="2.4" height="4" rx="1.2" fill="#0FBFA6"/>
+                            <circle cx="13.5" cy="22" r="2.6" fill="#1A1A2E"/>
+                            <circle cx="26.5" cy="22" r="2.6" fill="#1A1A2E"/>
+                            <circle cx="10.5" cy="27.5" r="2.8" fill="#FF9EC6"/>
+                            <circle cx="29.5" cy="27.5" r="2.8" fill="#FF9EC6"/>
+                            <defs>
+                                <linearGradient id="botGradient1" x1="2" y1="6" x2="38" y2="36" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1FD1A6"/>
+                                    <stop offset="1" stop-color="#0EA5C7"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </span>
+                    <p class="chatbot-msg-text">Placeholder</p>
+                </div>
+
+                <div class="chatbot-msg chatbot-msg--user">
+                    <div class="chatbot-bubble">Placeholder</div>
+                </div>
+
+                <div class="chatbot-msg chatbot-msg--bot">
+                        <!-- <span class="chatbot-avatar">
+                            <svg viewBox="0 0 40 40" fill="none">
+                                <rect x="2" y="6" width="36" height="30" rx="12" fill="url(#botGradient2)"/>
+                                <circle cx="20" cy="4" r="2.4" fill="#0FBFA6"/>
+                                <rect x="18.8" y="2" width="2.4" height="4" rx="1.2" fill="#0FBFA6"/>
+                                <circle cx="13.5" cy="22" r="2.6" fill="#1A1A2E"/>
+                                <circle cx="26.5" cy="22" r="2.6" fill="#1A1A2E"/>
+                                <circle cx="10.5" cy="27.5" r="2.8" fill="#FF9EC6"/>
+                                <circle cx="29.5" cy="27.5" r="2.8" fill="#FF9EC6"/>
+                                <defs>
+                                    <linearGradient id="botGradient2" x1="2" y1="6" x2="38" y2="36" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#1FD1A6"/>
+                                        <stop offset="1" stop-color="#0EA5C7"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span> -->
+                    <!-- <p class="chatbot-msg-text chatbot-typing">AI Chatbot is typing...</p> -->
+                </div>
+
+            </div>
+
+            <!-- ================= SUGGESTIONS ================= -->
+            <div class="chatbot-suggestions">
+                <button type="button" class="chatbot-suggestion-btn">Suggestion 1</button>
+                <button type="button" class="chatbot-suggestion-btn">Suggestion 2</button>
+                <button type="button" class="chatbot-suggestion-btn">Suggestion 3</button>
+            </div>
+
+            <!-- ================= INPUT BAR ================= -->
+            <form class="chatbot-input-bar">
+                <input type="text" class="chatbot-input" placeholder="Message Chatbot"/>
+                <button type="submit" class="chatbot-send-btn" aria-label="Send message">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </form>
+
+        </div>
+    </div>
+
+    <!-- --bootstrap-- -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- --main js-- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future</title>
+    <!-- --fonts -->
+    <!-- <link rel="stylesheet" href="assets/css/fonts.css"> -->
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft"
+        rel="stylesheet" />
+    <!-- --font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- --style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+    <div class="main">
+        <!-- ================= TOP LOGO ================= -->
+        <div class="festival-logo">
+            <img src="assets/images/logo.png" alt="Skills Future Festival" />
+        </div>
+        <div class="container">
+            <div class="explore-zone-area">
+                <h2 class="zones-main-title">Explore All Zones</h2>
+                <p class="zones-description-text">
+                    Discover each zone, complete activities,<br>
+                    and track your progress.
+                </p>
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#passportModal">
+                Complete Passport (Test Open)
+                </button> -->
+
+                <div class="passport-card-wrapper">
+                    <div class="passport-card">
+                        <!-- Header Section -->
+                        <div class="passport-header">
+                            <div class="header-left">
+                                <h2 class="passport-title">EVENT PASSPORT</h2>
+                                <p class="passport-subtitle">Visit each zone and earn a prize</p>
+                            </div>
+                            <div class="header-right">
+                                <span class="progress-label">My Progress:</span>
+                                <span class="progress-percentage" id="progressPercentage">0%</span>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Zone Progress Tabs -->
+                        <div class="zones-bar" id="zonesBar">
+                            <button class="zone-tab" data-index="1">ZONE 1</button>
+                            <button class="zone-tab" data-index="2">ZONE 2</button>
+                            <button class="zone-tab" data-index="3">ZONE 3</button>
+                            <button class="zone-tab" data-index="4">ZONE 4</button>
+                            <button class="zone-tab" data-index="5">ZONE 5</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h2 class="banner-title">All Zones</h2>
+                </div>
+                <div class="zone-grid-two">
+                    <div class="zone-card zone-one">
+                        <!-- Top Image Wrapper -->
+                        <div class="card-image">
+                            <img src="assets/images/zone-1.png" alt="Zone Image" />
+                        </div>
+
+                        <!-- Bottom Content -->
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h2 class="cardzone-title">Zone 1</h2>
+                                <a href="#" class="cardarrow-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <p class="zone-subtitle">Career Discovery</p>
+                        </div>
+                    </div>
+                    <div class="zone-card zone-two">
+                        <!-- Top Image Wrapper -->
+                        <div class="card-image">
+                            <img src="assets/images/zone-2.png" alt="Zone Image" />
+                        </div>
+
+                        <!-- Bottom Content -->
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h2 class="cardzone-title">Zone 2</h2>
+                                <a href="#" class="cardarrow-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <p class="zone-subtitle">Skills Match</p>
+                        </div>
+                    </div>
+                    <div class="zone-card zone-three">
+                        <!-- Top Image Wrapper -->
+                        <div class="card-image">
+                            <img src="assets/images/zone-3.png" alt="Zone Image" />
+                        </div>
+
+                        <!-- Bottom Content -->
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h2 class="cardzone-title">Zone 3</h2>
+                                <a href="#" class="cardarrow-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <p class="zone-subtitle">Resume Tips</p>
+                        </div>
+                    </div>
+                    <div class="zone-card zone-four">
+                        <!-- Top Image Wrapper -->
+                        <div class="card-image">
+                            <img src="assets/images/zone-4.png" alt="Zone Image" />
+                        </div>
+
+                        <!-- Bottom Content -->
+                        <div class="card-body">
+                            <div class="card-header">
+                                <h2 class="cardzone-title">Zone 3</h2>
+                                <a href="#" class="cardarrow-btn">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <p class="zone-subtitle">Resume Tips</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="chat-bot">
+        <img src="assets/images/chat.png" alt="Ask Bot" />
+    </div>
+    <footer>
+        <div class="bottom-nav">
+
+            <!-- Left Option: Job Listings -->
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Job Listings</span>
+            </a>
+
+            <!-- Center Floating Option: Scan QR -->
+            <a href="#" class="center-btn-wrapper">
+                <div class="center-btn">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <span>Scan QR</span>
+                </div>
+            </a>
+
+            <!-- Right Option: Schedule -->
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-bars"></i>
+                <span>Schedule</span>
+            </a>
+        </div>
+    </footer>
+    </div>
+
+    <!-- ---passport complete modle -->
+    <div class="modal fade" id="passportModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content passport-modal-card password-modal">
+                <div class="modal-body text-center p-4">
+
+                    <div class="trophy-container">
+                        <img src="assets/images/trophy.png" alt="Trophy" class="trophy-img" />
+                    </div>
+
+                    <h2 class="modal-passport-title">PASSPORT<br>COMPLETE</h2>
+
+                    <p class="modal-passport-desc">
+                        You completed your Event Passport.<br>
+                        Your reward is ready to claim.
+                    </p>
+
+                    <button type="button" class="btn-claim-reward" data-bs-target="#scannerModal" data-bs-toggle="modal"
+                        id="claimRewardBtn">
+                        Claim reward
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. QR Code Scanner Modal -->
+<div class="modal fade" id="scannerModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-bottom">
+        <div class="modal-content scanner-modal-card">
+
+            <button type="button" class="btn-scanner-close" data-bs-dismiss="modal" aria-label="Close">✕</button>
+
+            <div class="modal-body text-center p-4">
+                <h3 class="scanner-title">Scan a QR code</h3>
+                <p class="scanner-footer-text mb-4">Position the QR code inside the frame.</p>
+
+                <!-- Scanner Box with Camera & Cyan Border Frame -->
+                <div class="scanner-box">
+                    <div class="corner top-left"></div>
+                    <div class="corner top-right"></div>
+                    <div class="corner bottom-left"></div>
+                    <div class="corner bottom-right"></div>
+
+                    <video id="vid" class="scanner-scan" autoplay playsinline muted></video>
+                </div>
+
+                <p class="scanner-footer-text">Hold steady and keep the full QR code visible.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#rewardmodal">
+                    Open Reward Modal
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <!-- --rewared modal -->
+    <div class="modal fade" id="rewardmodal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content passport-modal-card reward-modal">
+                <div class="modal-body text-center p-4">
+
+                    <div class="trophy-container">
+                        <img src="assets/images/checkmark.png" alt="checkmark" class="trophy-img" />
+                    </div>
+
+                    <h2 class="modal-passport-title">REWARD<br>CLAIMED</h2>
+
+                    <p class="modal-passport-desc">
+                        You reward has been collected<br>
+                        Welcome to the Ella group.
+                    </p>
+
+                    <button type="button" class="btn-claim-reward" data-bs-target="#ellaGroupModal"
+                        data-bs-toggle="modal" id="goToEllaBtn">
+                        Go to Ella group
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. ELLA Group Modal -->
+    <div class="modal fade" id="ellaGroupModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content ella-modal-card">
+
+                <!-- Close Button (X) -->
+                <button type="button" class="btn-ella-close" data-bs-dismiss="modal" aria-label="Close">✕</button>
+
+                <div class="modal-body text-center p-4">
+                    <!-- Center White Circle Avatar -->
+                    <div class="ella-avatar-circle">
+                        <img src="assets/images/ella-avatar.png" alt="Ella" class="ella-avatar-img" />
+                    </div>
+
+                    <!-- Group Title & Date -->
+                    <h2 class="ella-title">ELLA</h2>
+                    <p class="ella-created-date">Created on 00/00/26</p>
+
+                    <!-- Members Icon & Count Badge -->
+                    <!-- Members Overlapping Avatar & Count Badge -->
+                    <div class="ella-members-badge">
+                        <div class="member-avatar">
+                            <img src="assets/images/user.png" alt=""/>
+                        </div>
+                        <div class="member-avatar">
+                           <img src="assets/images/user.png" alt=""/>
+                        </div>
+                        <div class="member-count-pill">
+                            +33
+                        </div>
+                    </div>
+                    <!-- Join Group Button -->
+                    <button type="button" class="btn-claim-reward" data-bs-dismiss="modal">
+                        Join group
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- --bootstrap-- -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- --main js-- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

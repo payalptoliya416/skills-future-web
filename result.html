@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future</title>
+    <!-- --fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css"/>
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet"/>
+    <!-- --font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <!-- --style -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+</head>
+
+<body>
+
+    <div class="photobooth-page main">
+        <div class="photobooth-widget result-widget">
+
+            <!-- ================= HEADER ================= -->
+            <div class="photobooth-header">
+                <div class="cover-letter-art">
+                    <a href="index.html" class="btn back-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                        <span>Exit</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ================= PROGRESS ================= -->
+            <div class="photobooth-progress">
+                <div class="progress-line" role="progressbar" aria-label="Onboarding progress" data-step="6" data-total="6" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- ================= CONTENT ================= -->
+            <div class="photobooth-content result-content">
+
+                <h1 class="photobooth-title">Your headshot is ready</h1>
+
+                <div class="result-photo-wrap">
+
+                    <span class="result-sparkle result-sparkle--1"></span>
+                    <span class="result-sparkle result-sparkle--2"></span>
+                    <span class="result-sparkle result-sparkle--3"></span>
+                    <span class="result-sparkle result-sparkle--4"></span>
+                    <span class="result-sparkle result-sparkle--5"></span>
+                    <span class="result-sparkle result-sparkle--6"></span>
+                    <span class="result-sparkle result-sparkle--7"></span>
+                    <span class="result-sparkle result-sparkle--8"></span>
+
+                    <div class="result-photo-frame">
+
+                        <img id="resultPhoto" alt="Your generated headshot" hidden/>
+
+                        <div class="review-photo-placeholder" id="resultPhotoPlaceholder">
+                            <i class="fa-solid fa-image"></i>
+                            <p>No headshot found. Please generate one first.</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="generation-allowance">
+                    <span class="generation-allowance__icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </span>
+                    <span class="generation-allowance__label">Generation allowance</span>
+                    <strong class="generation-allowance__value">2 attempts remaining</strong>
+                </div>
+
+            </div>
+
+            <!-- ================= BUTTON ================= -->
+            <div class="photobooth-btn-container result-actions">
+
+                <button type="button" class="photobooth-start-btn" id="downloadHeadshotBtn">
+                    <i class="fa-solid fa-download"></i>
+                    Download headshot
+                </button>
+
+                <a href="generate.html" class="photobooth-secondary-btn photobooth-secondary-btn--stacked">
+                    <span>Generate another</span>
+                    <small>Uses 1 attempt</small>
+                </a>
+
+                <a href="index.html" class="photobooth-secondary-btn">
+                    Return to homepage
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --bootstrap-- -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- --main js-- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future</title>
+    <!-- --fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css"/>
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet"/>
+    <!-- --font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <!-- --style -->
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+</head>
+
+<body>
+
+    <div class="photobooth-page main">
+        <div class="photobooth-widget">
+
+            <!-- ================= HEADER ================= -->
+            <div class="photobooth-header">
+                <div class="cover-letter-art">
+                    <a href="ai-photo-landing.html" class="btn back-btn">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>Back</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ================= PROGRESS ================= -->
+            <div class="photobooth-progress">
+                <div class="progress-line" role="progressbar" aria-label="Onboarding progress" data-step="2" data-total="6" aria-valuenow="33.33" aria-valuemin="0" aria-valuemax="100">
+                    <span></span>
+                </div>
+            </div>
+
+            <!-- ================= CONTENT ================= -->
+            <div class="photobooth-content">
+
+                <!-- Step 1: Gender -->
+                <div class="photobooth-step">
+                    <h2 class="photobooth-step-title">1. Select gender</h2>
+
+                    <div class="gender-options">
+
+                        <label class="gender-option">
+                            <input type="radio" name="gender" value="Male"/>
+                            <span class="gender-option__check"></span>
+                            <span class="gender-option__text">Male</span>
+                        </label>
+
+                        <label class="gender-option is-selected">
+                            <input type="radio" name="gender" value="Female" checked/>
+                            <span class="gender-option__check"></span>
+                            <span class="gender-option__text">Female</span>
+                        </label>
+
+                    </div>
+                </div>
+
+                <!-- Step 2: Style -->
+                <div class="photobooth-step">
+                    <h2 class="photobooth-step-title">2. Choose a style</h2>
+
+                    <div class="style-options">
+
+                        <label class="style-option">
+                            <input type="radio" name="style" value="Classic"/>
+                            <span class="style-option__frame">
+                                <i class="fa-solid fa-image"></i>
+                            </span>
+                            <span class="style-option__label">Classic</span>
+                            <span class="style-option__radio"></span>
+                        </label>
+
+                        <label class="style-option is-selected">
+                            <input type="radio" name="style" value="Executive" checked/>
+                            <span class="style-option__frame">
+                                <i class="fa-solid fa-image"></i>
+                            </span>
+                            <span class="style-option__label">Executive</span>
+                            <span class="style-option__radio"></span>
+                        </label>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ================= BUTTON ================= -->
+            <div class="photobooth-btn-container">
+                <a href="take-photo.html" class="photobooth-start-btn">
+                    Next
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --bootstrap-- -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- --main js-- -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
