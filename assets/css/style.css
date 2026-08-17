@@ -2208,7 +2208,6 @@ select.form-control option {
     transform 0.12s ease,
     box-shadow 0.12s ease,
     opacity 0.12s ease;
-  box-shadow: 0 10px 20px rgba(53, 0, 115, 0.25);
 }
 
 .start-building-btn:hover {
