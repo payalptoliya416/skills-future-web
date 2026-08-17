@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future — Allow camera access</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="festival-logo">
+            <img src="assets/images/logo.png" alt="Skills Future Festival"/>
+        </div>
+
+        <section class="permission-prompt-page">
+                <div class="qr-card">
+                    <button type="button" class="qr-close" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+
+                    <h1 class="qr-title">Scan a QR code</h1>
+                    <p class="qr-subtitle">Place the QR code inside the frame.</p>
+
+                    <div class="qr-frame qr-frame--off">
+                        <span class="qr-corner qr-corner--tl"></span>
+                        <span class="qr-corner qr-corner--tr"></span>
+                        <span class="qr-corner qr-corner--bl"></span>
+                        <span class="qr-corner qr-corner--br"></span>
+                        <span class="qr-frame-off-icon"><i class="fa-solid fa-video-slash"></i></span>
+                        <p class="qr-frame-off-title">Camera access is off</p>
+                        <p class="qr-frame-off-desc">
+                            To scan QR codes, allow camera access in your browser or phone settings, then return here.
+                        </p>
+
+                    </div>
+
+                    <p class="qr-status" role="status" aria-live="polite"></p>
+                </div>
+
+            <div class="job-detail-btn-container">
+                <a href="#" class="qr-primary-btn is-disabled disabled" >
+                    Try again
+                </a>
+            </div>
+
+        </section>
+
+        <!-- native-style permission dialog -->
+                        <div class="qr-native-overlay">
+                            <div class="qr-native-dialog">
+                                <p>&ldquo;SkillsFuture Festival&rdquo; would like to access the camera</p>
+                                <div class="qr-native-actions">
+                                    <button type="button" class="qr-native-btn qr-native-btn--deny" id="denyCameraBtn">Don&rsquo;t Allow</button>
+                                    <button type="button" class="qr-native-btn qr-native-btn--allow" id="allowCameraBtn">Allow</button>
+                                </div>
+                            </div>
+                        </div>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

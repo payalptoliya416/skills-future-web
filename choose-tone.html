@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <section class="job-detail-page">
+
+            <div class="job-detail-art">
+                <a href="job-details.html" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i>
+                    <span>Back</span>
+                </a>
+            </div>
+
+
+            <div class="container job-detail-content">
+
+                <div class="progress-line-data" role="progressbar" aria-label="Onboarding progress" data-step="4" data-total="7" aria-valuemin="0" aria-valuemax="100">
+                    <span></span>
+                </div>
+
+                <div class="job-detail-container">
+
+                    <p class="job-detail-label">Step 3 of 3</p>
+
+                    <h1 class="job-detail-title">Choose your tone</h1>
+
+                    <p class="job-detail-description">Select how you would like the letter to sound.</p>
+
+                    <div class="tone-option-list" id="toneOptionList" role="radiogroup" aria-label="Letter tone">
+
+                        <label class="tone-option is-selected" data-tone-option>
+                            <input type="radio" name="letter-tone" id="tone-professional" value="professional" checked>
+                            <span class="tone-option-radio" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="tone-option-copy">
+                                <span class="tone-option-title">Professional</span>
+                                <span class="tone-option-desc">Clear, polished and business-focused</span>
+                            </span>
+                        </label>
+
+                        <label class="tone-option" data-tone-option>
+                            <input type="radio" name="letter-tone" id="tone-confident" value="confident">
+                            <span class="tone-option-radio" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="tone-option-copy">
+                                <span class="tone-option-title">Confident</span>
+                                <span class="tone-option-desc">Direct, energetic and achievement-led</span>
+                            </span>
+                        </label>
+
+                        <label class="tone-option" data-tone-option>
+                            <input type="radio" name="letter-tone" id="tone-warm" value="warm">
+                            <span class="tone-option-radio" aria-hidden="true">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <span class="tone-option-copy">
+                                <span class="tone-option-title">Warm</span>
+                                <span class="tone-option-desc">Personable, sincere and approachable</span>
+                            </span>
+                        </label>
+
+                    </div>
+
+                    <div class="generation-allowance" id="generationAllowance">
+                        <span class="generation-allowance-label">
+                            <img src="assets/images/genrate-allowance.png" alt="" aria-hidden="true" />
+                            Generation allowance
+                        </span>
+                        <span class="generation-allowance-count" id="generationAllowanceCount">2 attempts remaining</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="job-detail-btn-container job-detail-btn-container--stacked">
+                <a href="generating.html" class="start-building-btn" id="generateLetterBtn">
+                    Generate cover letter
+                </a>
+                <a href="job-details.html" class="review-answers-btn" id="reviewAnswersBtn">
+                    Review my answers
+                </a>
+            </div>
+
+
+        </section>
+
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

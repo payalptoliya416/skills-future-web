@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future — Scan a QR code</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <div class="festival-logo">
+            <img src="assets/images/logo.png" alt="Skills Future Festival"/>
+        </div>
+
+        <section class="scanner-page">
+            <div class="qr-card">
+                <button type="button" class="qr-close" id="scannerCloseBtn" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <h1 class="qr-title">Scan a QR code</h1>
+                <p class="qr-subtitle">Place the QR code inside the frame.</p>
+
+                <div class="qr-frame">
+                    <video id="qrVideo" autoplay muted playsinline></video>
+                    <canvas id="qrCanvas" style="display:none;"></canvas>
+
+                    <div class="qr-viewfinder" aria-hidden="true">
+                        <span class="qr-tl"></span>
+                        <span class="qr-tr"></span>
+                        <span class="qr-bl"></span>
+                        <span class="qr-br"></span>
+                        <span class="qr-scan-line"></span>
+                    </div>
+                </div>
+
+                <p class="qr-hint">Hold steady and make sure the full QR code is visible.</p>
+                <p class="qr-status" id="scanStatus" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

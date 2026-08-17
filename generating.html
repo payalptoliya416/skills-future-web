@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+        <section class="job-detail-page">
+
+            <div class="container job-detail-content genrating-review">
+
+                <div class="progress-line-data" role="progressbar" aria-label="Onboarding progress" data-step="5" data-total="7" aria-valuemin="0" aria-valuemax="100">
+                    <span></span>
+                </div>
+
+                <div class="job-detail-container job-detail-container--centered">
+
+                    <div class="generating-spinner" id="generatingSpinner" role="status" aria-live="polite">
+                        <span class="generating-spinner-ring"></span>
+                        <i class="fa-solid fa-check generating-spinner-check" id="generatingSpinnerCheck" aria-hidden="true"></i>
+                    </div>
+
+                    <h1 class="job-detail-title job-detail-title--center" id="generatingTitle">Creating your cover letter&hellip;</h1>
+
+                    <p class="job-detail-description job-detail-description--center" id="generatingSubtext">
+                        We&rsquo;re shaping your experience and strengths into a professional draft.
+                    </p>
+
+                    <div class="info-pill" id="attemptPill">
+                        <span class="info-pill-label">
+                            <img src="assets/images/genrate-allowance.png" alt="" aria-hidden="true" />
+                            Generation attempt in use
+                        </span>
+                        <span class="info-pill-value" id="attemptPillValue">1 of 2</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="job-detail-btn-container">
+                <button type="button" class="start-building-btn is-disabled" id="previewLetterBtn">
+                    Preview generated letter
+                </button>
+            </div>
+
+        </section>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

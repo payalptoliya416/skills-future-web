@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Future — You're checked in</title>
+
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="festival-logo">
+            <img src="assets/images/logo.png" alt="Skills Future Festival"/>    
+        </div>
+
+        <section class="checked-in-page">
+
+            <div class="qr-card">
+                <button type="button" class="qr-close" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="qr-success-wrap">
+                    <div class="qr-success-icon" aria-hidden="true">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <h1 class="qr-success-title">You&rsquo;re checked in</h1>
+                    <p class="qr-success-desc" id="checkedInZone">This zone has been added to your Event Passport.</p>
+                </div>
+            </div>
+
+            <div class="qr-btn-container">
+                <button type="button" class="qr-primary-btn" id="viewPassportBtn">View Event Passport</button>
+                <button type="button" class="qr-secondary-btn" id="scanAnotherBtn">Scan another code</button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
