@@ -4318,6 +4318,10 @@ select.form-control option {
   position: relative;
   z-index: 2;
 }
+.cover-letter-content,
+.job-detail-content {
+  padding: 35px !important;
+}
 
 .genrating-review {
   padding-top: 73px !important;
