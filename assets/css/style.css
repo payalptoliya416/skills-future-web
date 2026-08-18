@@ -5261,7 +5261,23 @@ select.form-control option {
     background-color 0.15s ease,
     color 0.15s ease;
 }
+.qr-card,
+.cover-letter-page,
+.job-detail-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
 
+.cover-letter-container {
+  padding-bottom: 40px;
+}
+
+.cover-letter-btn-container {
+  padding: 30px;
+  bottom: auto;
+}
 .qr-close:hover {
   background: #f4f2fa;
   color: var(--primary-color);
