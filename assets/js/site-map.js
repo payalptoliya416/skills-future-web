@@ -1,6 +1,4 @@
 
-// ---index file to js start
-
     const inputs = document.querySelectorAll(".otp-inputs input");
 
     inputs.forEach((input, index) => {
@@ -44,12 +42,12 @@
     // cover letter landing start
 
 document.addEventListener("DOMContentLoaded", () => {
-    const progressBar = document.querySelector(".progress-line-data");
+    const progressBar = document.querySelector(".progress-line");
     const progressFill = progressBar?.querySelector("span");
 
     if (!progressBar || !progressFill) return;
 
-    // Current step / total steps (override per page via data-step / data-total on .progress-line-data)
+    // Current step / total steps (override per page via data-step / data-total on .progress-line)
     const currentStep = Number(progressBar.dataset.step) || 1;
     const totalSteps = Number(progressBar.dataset.total) || 9;
 
@@ -485,4 +483,3 @@ document.addEventListener("DOMContentLoaded", () => {
       });
 
     })();
-// ---index file to js end
