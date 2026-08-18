@@ -4002,10 +4002,6 @@ select.form-control option {
    REVIEW PHOTO PAGE
 ========================================= */
 
-.review-widget {
-  height: 100dvh;
-}
-
 .review-widget .photobooth-header {
   padding: 14px 12px;
 }
