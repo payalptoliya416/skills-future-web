@@ -3422,10 +3422,6 @@ select.form-control option {
 
 .photobooth-btn-container {
   max-width: 768px;
-  position: fixed;
-  bottom: 32px;
-  left: 0;
-  right: 0;
   margin: auto;
   padding: 30px;
 }
@@ -3870,7 +3866,7 @@ select.form-control option {
   flex-shrink: 0;
   margin-top: 40px;
   padding: 8px 16px;
-  border-radius: 10px;
+  border-radius: 8px;
   background: #ab96c4;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
