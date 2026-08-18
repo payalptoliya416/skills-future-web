@@ -3179,7 +3179,7 @@ select.form-control option {
   padding: 8px 8px 8px 20px;
   background: var(--white-color);
   border: 1.5px solid #bfe6f5;
-  border-radius: 30px;
+  border-radius: 16px;
   box-shadow: 0 0 0 4px rgba(0, 170, 234, 0.08);
 }
 
