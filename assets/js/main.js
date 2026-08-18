@@ -997,7 +997,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var STORAGE_KEY_TONE = "skillsFuture:selectedTone";
     var STORAGE_KEY_LETTER = "skillsFuture:coverLetterText";
     var STORAGE_KEY_ROLE = "skillsFuture:coverLetterRole";
-    var REVIEW_PAGE_URL = "review.html";
+    var REVIEW_PAGE_URL = "review_cover_letter.html";
     var GENERATION_DELAY_MS = 2400;
 
     function init() {
@@ -1273,7 +1273,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /* qr-checkin.js
    Shared camera + QR scanning logic for the check-in flow:
-   camera-permission-off.html -> permission-prompt.html -> scanner.html -> checked-in.html
+   camera-permission.html -> permission-prompt.html -> scanner.html -> checked-in.html
 */
 
 (function () {
@@ -1309,7 +1309,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stopStream: stopStream
     };
 
-    /* ---------- camera-permission-off.html ---------- */
+    /* ---------- camera-permission.html ---------- */
 
     document.addEventListener("DOMContentLoaded", function () {
         var tryAgainBtn = document.getElementById("tryAgainBtn");
@@ -1358,14 +1358,14 @@ document.addEventListener("DOMContentLoaded", function () {
                         window.location.href = "scanner.html";
                     })
                     .catch(function () {
-                        window.location.href = "camera-permission-off.html";
+                        window.location.href = "camera-permission.html";
                     });
             });
         }
 
         if (denyBtn) {
             denyBtn.addEventListener("click", function () {
-                window.location.href = "camera-permission-off.html";
+                window.location.href = "camera-permission.html";
             });
         }
     });
@@ -1383,7 +1383,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (window.history.length > 1) {
                     window.history.back();
                 } else {
-                    window.location.href = "camera-permission-off.html";
+                    window.location.href = "camera-permission.html";
                 }
             });
         }
@@ -1411,7 +1411,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 rafId = requestAnimationFrame(tick);
             })
             .catch(function () {
-                window.location.href = "camera-permission-off.html";
+                window.location.href = "camera-permission.html";
             });
 
         function tick() {

@@ -23,23 +23,24 @@
         <section class="checked-in-page">
 
             <div class="qr-card">
-                <button type="button" class="qr-close" aria-label="Close">
-                    <i class="fa-solid fa-xmark"></i>
-                </button>
+                    <a  class="qr-close" id="scannerCloseBtn" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
 
-                <div class="qr-success-wrap">
-                    <div class="qr-success-icon" aria-hidden="true">
-                        <i class="fa-solid fa-check"></i>
+                    <h1 class="qr-title">You&rsquo;re checked in</h1>
+                    <p class="qr-subtitle">This zone has been added to your Event Passport.</p>
+
+                    <div class="qr-frame qr-frame--off qr-success-icon">
+                        <div class="qr-checked-in" aria-hidden="true">
+                            <img src="assets/images/cover-ready.png" alt="Success check" />
+                        </div>
+                        <p class="qr-success-title">Scan complete</p>
                     </div>
+            </div> 
 
-                    <h1 class="qr-success-title">You&rsquo;re checked in</h1>
-                    <p class="qr-success-desc" id="checkedInZone">This zone has been added to your Event Passport.</p>
-                </div>
-            </div>
-
-            <div class="qr-btn-container">
-                <button type="button" class="qr-primary-btn" id="viewPassportBtn">View Event Passport</button>
-                <button type="button" class="qr-secondary-btn" id="scanAnotherBtn">Scan another code</button>
+            <div class="job-detail-btn-container qr-btn-container">
+                <a class="qr-primary-btn" id="viewPassportBtn">View Event Passport</a>
+                <a class="qr-secondary-btn" id="scanAnotherBtn">Scan another code</a>
             </div>
 
         </section>
