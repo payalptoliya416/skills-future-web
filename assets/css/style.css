@@ -2187,7 +2187,7 @@ select.form-control option {
   transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cover-letter-btn-container {
+.cover-lette {
   max-width: 708px;
   position: fixed;
   bottom: 0;
@@ -3405,8 +3405,8 @@ select.form-control option {
 }
 
 .photobooth-btn-container {
-  /* max-width: 768px;
-  margin: auto; */
+  max-width: 768px;
+  /* margin: auto; */
   padding: 30px;
 }
 
