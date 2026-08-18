@@ -3405,8 +3405,8 @@ select.form-control option {
 }
 
 .photobooth-btn-container {
-  max-width: 768px;
-  margin: auto;
+  /* max-width: 768px;
+  margin: auto; */
   padding: 30px;
 }
 
