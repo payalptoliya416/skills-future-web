@@ -3699,10 +3699,6 @@ select.form-control option {
    TAKE PHOTO PAGE
 ========================================= */
 
-.take-photo-widget {
-  height: 100dvh;
-}
-
 .take-photo-widget .photobooth-header {
   padding: 14px 12px;
 }
