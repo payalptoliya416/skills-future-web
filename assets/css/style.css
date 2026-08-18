@@ -3861,7 +3861,6 @@ select.form-control option {
   flex-direction: column;
   flex: 0 0 auto;
   gap: 12px;
-  position: static;
   margin: 0;
   width: 100%;
   padding: 18px 28px 60px;
@@ -4189,10 +4188,6 @@ select.form-control option {
 /* =========================================
    RESULTS PAGE
 ========================================= */
-
-.result-widget {
-  height: 100dvh;
-}
 
 .result-widget .photobooth-header {
   padding: 14px 12px;
