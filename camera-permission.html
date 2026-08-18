@@ -52,7 +52,8 @@
                 <p class="qr-status" id="cameraOffStatus" role="status" aria-live="polite"></p>
 
                 <div class="job-detail-btn-container">
-                    <a href="permission-prompt.html" class="qr-primary-btn" id="tryAgainBtn">
+                    <a href="#" class="qr-primary-btn" id="tryAgainBtn" data-bs-toggle="modal"
+                        data-bs-target="#cameraPermissionModal">
                         Try again
                     </a>
                 </div>
@@ -60,6 +61,25 @@
 
         </section>
 
+    </div>
+    <!-- --modal-- -->
+    <div class="modal fade" id="cameraPermissionModal" tabindex="-1" aria-labelledby="cameraPermissionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body text-center">
+                    <div class="qr-native-dialog">
+                        <p>&ldquo;SkillsFuture Festival&rdquo; would like to access the camera</p>
+                        <div class="qr-native-actions">
+                            <a class="qr-native-btn qr-native-btn--deny" id="denyCameraBtn">Don&rsquo;t Allow</a>
+                            <a class="qr-native-btn qr-native-btn--allow" id="allowCameraBtn">Allow</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </div>
 
     <!-- --bootstrap-- -->
