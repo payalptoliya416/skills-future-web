@@ -1498,7 +1498,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (viewPassportBtn) {
             viewPassportBtn.addEventListener("click", function () {
                 // Hook this up to the real Event Passport page.
-                window.location.href = "event-passport.html";
+                window.location.href = "#";
             });
         }
     });

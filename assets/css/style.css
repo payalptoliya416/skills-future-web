@@ -4499,12 +4499,12 @@ select.form-control option {
 
 .cover-letter-btn-container,
 .job-detail-btn-container {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   left: 0;
   right: 0;
   margin-top: auto;
-  padding: 30px;
+  padding: 0px;
   flex-shrink: 0;
   text-align: center;
   justify-items: center;
@@ -5226,64 +5226,73 @@ select.form-control option {
 /* ---------- header / logo ---------- */
 
 .festival-logo {
-    position: absolute;
-    top: 14px;
-    left: 10px;
-    width: 64px;
-    z-index: 5;
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  width: 64px;
+  z-index: 5;
 }
 .festival-logo img {
-    max-width: 80px;
-    height: auto;
+  max-width: 80px;
+  height: auto;
 }
 @media (max-width: 490px) {
-    .festival-logo {
-        left: 8px;
-    }
+  .festival-logo {
+    left: 8px;
+  }
 }
 /* ---------- card ---------- */
 
 .qr-card {
-    position: relative;
-    z-index: 1;
-    background: var(--white-color);
-    border-radius: 24px 24px 0 0;
-    margin-top: 135px;
-    padding: 40px 30px 30px;
-    box-shadow: -235px -30px 30px -20px #c7ecfa, -110px -30px 30px -20px #d8d8f0, 180px -30px 30px -20px #f2b4dd
+  position: relative;
+  z-index: 1;
+  background: var(--white-color);
+  border-radius: 24px 24px 0 0;
+  margin-top: 135px;
+  padding: 40px 30px 30px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  box-shadow:
+    -235px -30px 30px -20px #c7ecfa,
+    -110px -30px 30px -20px #d8d8f0,
+    180px -30px 30px -20px #f2b4dd;
 }
 
 .qr-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    background: transparent;
-    color: #350072;
-    font-size: 18px;
-    cursor: pointer;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.15s ease, color 0.15s ease;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: transparent;
+  color: #350072;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .qr-close:hover {
-  background: #F4F2FA;
+  background: #f4f2fa;
   color: var(--primary-color);
 }
 
 .qr-title {
-    text-align: center;
-    font-size: 30px;
-    font-weight: 800;
-    line-height: 40px;
-    color: #000000;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 40px;
+  color: #000000;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
 
 .qr-subtitle {
@@ -5324,11 +5333,7 @@ select.form-control option {
 
   padding: 26px;
 
-  background: linear-gradient(
-    135deg,
-    #020204 0%,
-    #455473 100%
-  );
+  background: linear-gradient(135deg, #020204 0%, #455473 100%);
 
   border-radius: 16px;
 }
@@ -5386,7 +5391,6 @@ select.form-control option {
   border-bottom-right-radius: 16px;
 }
 
-
 .qr-frame-off-title {
   font-size: 18px;
   font-weight: 700;
@@ -5395,11 +5399,11 @@ select.form-control option {
 }
 
 .qr-frame-off-desc {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.55;
-    color: #fff;
-    max-width: 278px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: #fff;
+  max-width: 278px;
 }
 
 /* corner brackets (scanner) */
@@ -5419,33 +5423,71 @@ select.form-control option {
   border-width: 0;
 }
 
-.qr-viewfinder .qr-tl { top: 0; left: 0; border-top-width: 4px; border-left-width: 4px; border-top-left-radius: 10px; }
-.qr-viewfinder .qr-tr { top: 0; right: 0; border-top-width: 4px; border-right-width: 4px; border-top-right-radius: 10px; }
-.qr-viewfinder .qr-bl { bottom: 0; left: 0; border-bottom-width: 4px; border-left-width: 4px; border-bottom-left-radius: 10px; }
-.qr-viewfinder .qr-br { bottom: 0; right: 0; border-bottom-width: 4px; border-right-width: 4px; border-bottom-right-radius: 10px; }
+.qr-viewfinder .qr-tl {
+  top: 0;
+  left: 0;
+  border-top-width: 4px;
+  border-left-width: 4px;
+  border-top-left-radius: 10px;
+}
+.qr-viewfinder .qr-tr {
+  top: 0;
+  right: 0;
+  border-top-width: 4px;
+  border-right-width: 4px;
+  border-top-right-radius: 10px;
+}
+.qr-viewfinder .qr-bl {
+  bottom: 0;
+  left: 0;
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+  border-bottom-left-radius: 10px;
+}
+.qr-viewfinder .qr-br {
+  bottom: 0;
+  right: 0;
+  border-bottom-width: 4px;
+  border-right-width: 4px;
+  border-bottom-right-radius: 10px;
+}
 
 .qr-viewfinder .qr-scan-line {
   position: absolute;
   left: 20px;
   right: 20px;
   height: 2px;
-  width:auto;
-  background: linear-gradient(90deg, transparent, var(--blue-color), transparent);
+  width: auto;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--blue-color),
+    transparent
+  );
   top: 20px;
   animation: qrScanMove 2.2s ease-in-out infinite;
 }
 
 @keyframes qrScanMove {
-  0% { top: 20px; opacity: 0.9; }
-  50% { top: calc(100% - 22px); opacity: 0.9; }
-  100% { top: 20px; opacity: 0.9; }
+  0% {
+    top: 20px;
+    opacity: 0.9;
+  }
+  50% {
+    top: calc(100% - 22px);
+    opacity: 0.9;
+  }
+  100% {
+    top: 20px;
+    opacity: 0.9;
+  }
 }
 
 .qr-hint {
   text-align: center;
   font-size: 12.5px;
   font-weight: 500;
-  color: #9A96A8;
+  color: #9a96a8;
   margin-top: 6px;
   padding: 0 10px;
 }
@@ -5454,7 +5496,7 @@ select.form-control option {
   text-align: center;
   font-size: 12.5px;
   font-weight: 600;
-  color: #B42318;
+  color: #b42318;
   margin-top: 10px;
   min-height: 16px;
 }
@@ -5485,7 +5527,7 @@ select.form-control option {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.45;
-  color: #1C1C1E;
+  color: #1c1c1e;
   margin-bottom: 18px;
 }
 
@@ -5502,18 +5544,18 @@ select.form-control option {
   flex: 1;
   padding: 12px 8px;
   border: none;
-  border-radius:8px;
+  border-radius: 8px;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
 }
 
 .qr-native-btn + .qr-native-btn {
-  border-left: 1px solid #E5E5EA;
+  border-left: 1px solid #e5e5ea;
 }
 
 .qr-native-btn--deny {
-  color: #1C1C1E;
+  color: #1c1c1e;
   background: #d0d0d0;
 }
 
@@ -5540,7 +5582,7 @@ select.form-control option {
   justify-content: center;
   width: 100%;
   height: 54px;
-  max-width:708px;
+  max-width: 708px;
   border: none;
   border-radius: 44px;
   background: var(--primary-color);
@@ -5549,7 +5591,10 @@ select.form-control option {
   font-weight: 600;
   letter-spacing: 0.5px;
   cursor: pointer;
-  transition: opacity 0.15s ease, transform 0.12s ease, background-color 0.15s ease;
+  transition:
+    opacity 0.15s ease,
+    transform 0.12s ease,
+    background-color 0.15s ease;
   gap: 8px;
 }
 
@@ -5585,7 +5630,7 @@ select.form-control option {
 }
 
 .qr-secondary-btn:hover {
-  background: #7669C9;
+  background: #7669c9;
 }
 
 /* ---------- success state ---------- */
@@ -5600,7 +5645,7 @@ select.form-control option {
 
 .qr-success-icon {
   border-radius: 24px;
-  background: #D3F3E4;
+  background: #d3f3e4;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5608,10 +5653,10 @@ select.form-control option {
   max-width: 380px;
 }
 
-.qr-checked-in{
-    margin-bottom: 0px;
-    height: 110px;
-    width: 110px;
+.qr-checked-in {
+  margin-bottom: 0px;
+  height: 110px;
+  width: 110px;
 }
 
 .qr-success-title {
@@ -5624,7 +5669,7 @@ select.form-control option {
 .qr-success-desc {
   font-size: 14px;
   font-weight: 500;
-  color: #7A7686;
+  color: #7a7686;
   max-width: 260px;
   line-height: 1.5;
 }
