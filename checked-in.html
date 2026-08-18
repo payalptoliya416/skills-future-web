@@ -4,43 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skills Future — You're checked in</title>
+    Skills Future
 
-    <link rel="stylesheet" href="assets/css/fonts.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --fonts -->
+    <link rel="stylesheet" href="assets/css/fonts.css" />
+    <link href="https://db.onlinewebfonts.com/c/4679956de12dd2d8fc06ed0333e1d21b?family=Proxima+Soft"
+        rel="stylesheet" />
+    <!-- --font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+        integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- --bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- --style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
     <div class="main">
 
         <div class="festival-logo">
-            <img src="assets/images/logo.png" alt="Skills Future Festival"/>    
+            <img src="assets/images/logo.png" alt="Skills Future Festival" />
         </div>
 
         <section class="checked-in-page">
 
             <div class="qr-card">
-                    <a  class="qr-close" id="scannerCloseBtn" aria-label="Close">
-                        <i class="fa-solid fa-xmark"></i>
-                    </a>
+                <a class="qr-close" id="scannerCloseBtn" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
 
-                    <h1 class="qr-title">You&rsquo;re checked in</h1>
-                    <p class="qr-subtitle">This zone has been added to your Event Passport.</p>
+                <h1 class="qr-title">You&rsquo;re checked in</h1>
+                <p class="qr-subtitle">This zone has been added to your Event Passport.</p>
 
-                    <div class="qr-frame qr-frame--off qr-success-icon">
-                        <div class="qr-checked-in" aria-hidden="true">
-                            <img src="assets/images/cover-ready.png" alt="Success check" />
-                        </div>
-                        <p class="qr-success-title">Scan complete</p>
+                <div class="qr-frame qr-frame--off qr-success-icon">
+                    <div class="qr-checked-in" aria-hidden="true">
+                        <img src="assets/images/cover-ready.png" alt="Success check" />
                     </div>
-                    <div class="job-detail-btn-container qr-btn-container">
-                        <a class="qr-primary-btn" id="viewPassportBtn">View Event Passport</a>
-                        <a class="qr-secondary-btn" id="scanAnotherBtn">Scan another code</a>
-                    </div>
-            </div> 
+                    <p class="qr-success-title">Scan complete</p>
+                </div>
+                <div class="job-detail-btn-container qr-btn-container">
+                    <a class="qr-primary-btn" id="viewPassportBtn">View Event Passport</a>
+                    <a class="qr-secondary-btn" id="scanAnotherBtn">Scan another code</a>
+                </div>
+            </div>
 
 
         </section>

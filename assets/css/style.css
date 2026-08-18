@@ -21,34 +21,20 @@ body {
 }
 
 :root {
-  /* Primary */
   --primary-color: #350073;
   --primary-light: #7d6eae;
   --primary-soft: #624ab2;
-
-  /* Pink */
   --pink-color: #db047c;
   --pink-bright: #f6008f;
   --pink-light: #fed4e6;
   --pink-soft: #ffd1d0;
-
-  /* Orange */
   --orange-color: #fd8004;
   --orange-light: #ffdeb9;
-
-  /* Teal / Green */
   --teal-color: #00a985;
-
-  /* Blue */
   --blue-color: #00aaea;
   --blue-light: #46a2fc;
-  /* Neutral */
   --white-color: #ffffff;
-  --gray-color: #cecece;
-  --gray-light: #dddee2;
   --lavender-color: #d7d4e8;
-
-  /* Text */
   --text-color: #221e20;
 }
 
@@ -60,7 +46,7 @@ body {
   max-width: 768px;
   overflow: hidden;
   position: relative;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border: 1px solid #c7c7c7;
 }
@@ -223,7 +209,7 @@ body {
   flex-shrink: 0;
   border: 0;
   border-radius: 50%;
-  background: #350073;
+  background: var(--primary-color);
   color: #fff;
   display: flex;
   align-items: center;
@@ -296,7 +282,7 @@ body {
 
 /* --footer start */
 footer {
-  background-color: #350073;
+  background-color: var(--primary-color);
 }
 .bottom-nav {
   position: fixed;
@@ -306,7 +292,7 @@ footer {
   width: 100%;
   max-width: 768px;
   height: 70px;
-  background-color: #350073;
+  background-color: var(--primary-color);
   border-top-left-radius: 28px;
   border-top-right-radius: 28px;
   display: flex;
@@ -322,7 +308,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--white-color);
   text-decoration: none;
   flex: 1;
   gap: 6px;
@@ -346,7 +332,7 @@ footer {
   position: relative;
   top: -18px;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .center-btn {
@@ -411,7 +397,7 @@ footer {
   justify-content: center;
   gap: 5px;
   background-color: #2b0066;
-  color: #ffffff;
+  color: var(--white-color);
   border: none;
   padding: 5px 12px;
   border-radius: 50px;
@@ -616,7 +602,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .orange-shape {
@@ -650,7 +636,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 16px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   margin-top: 35px;
 }
 
@@ -687,16 +673,16 @@ footer {
   flex-direction: column;
 }
 .zone-card.zone-one {
-  background-color: #fd8004;
+  background-color: var(--orange-color);
 }
 .zone-card.zone-two {
-  background-color: #00aaea;
+  background-color: var(--blue-color);
 }
 .zone-card.zone-three {
-  background-color: #f6008f;
+  background-color: var(--pink-bright);
 }
 .zone-card.zone-four {
-  background-color: #00a985;
+  background-color: var(--teal-color);
 }
 .card-image {
   width: 100%;
@@ -732,7 +718,7 @@ footer {
 }
 
 .cardzone-title {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 24px;
   font-weight: 800;
   margin: 0;
@@ -742,7 +728,7 @@ footer {
   width: 30px;
   height: 30px;
   background-color: #2b0066;
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -761,7 +747,7 @@ footer {
 
 /* Subtitle Text */
 .zone-subtitle {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 400;
   margin: 0;
@@ -786,7 +772,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 16px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 
 .compass-badge {
@@ -857,7 +843,7 @@ footer {
 .banner-action-btn {
   width: 100%;
   background-color: #2b0066;
-  color: #ffffff;
+  color: var(--white-color);
   border: none;
   padding: 14px 20px;
   border-radius: 50px;
@@ -881,7 +867,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ffdeb9;
+  background-color: var(--orange-light);
   padding: 22px 30px;
   border-radius: 16px;
   width: 100%;
@@ -914,7 +900,7 @@ footer {
   width: 44px;
   height: 44px;
   background-color: #2b0066;
-  color: #ffffff;
+  color: var(--white-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1090,7 +1076,7 @@ footer {
   flex-direction: column;
   gap: 8px;
   padding: 12px 16px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   max-width: 500px;
 }
 
@@ -1146,7 +1132,7 @@ footer {
 .passport-card {
   position: relative;
   z-index: 1;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border-radius: 14px;
   padding: 26px 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
@@ -1213,7 +1199,7 @@ footer {
   outline: none;
   font-size: 15px;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
   margin-right: -20px;
   position: relative;
@@ -1410,7 +1396,7 @@ footer {
 .btn-claim-reward {
   width: 100%;
   background-color: #2b0066;
-  color: #ffffff;
+  color: var(--white-color);
   border: none;
   padding: 16px;
   border-radius: 50px;
@@ -1458,7 +1444,7 @@ footer {
 /* scanner start */
 .scanner-modal-card {
   border: none;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   position: relative;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
@@ -1557,9 +1543,9 @@ footer {
 
 .ella-modal-card {
   border: none;
-  background-color: #00a985;
+  background-color: var(--teal-color);
   margin: 0 20px;
-  color: #ffffff;
+  color: var(--white-color);
   position: relative;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
   overflow: hidden;
@@ -1573,7 +1559,7 @@ footer {
   border: none;
   font-size: 20px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
   z-index: 10;
   opacity: 0.9;
@@ -1586,7 +1572,7 @@ footer {
 .ella-avatar-circle {
   width: 120px;
   height: 120px;
-  background-color: #ffffff;
+  background-color: var(--white-color);
   border-radius: 50%;
   margin: 15px auto 20px auto;
   display: flex;
@@ -1614,7 +1600,7 @@ footer {
 .ella-title {
   font-size: 32px;
   font-weight: 900;
-  color: #ffffff;
+  color: var(--white-color);
   letter-spacing: 0.5px;
   margin-bottom: 4px;
   text-transform: uppercase;
@@ -1636,12 +1622,12 @@ footer {
 
 /* Overlapping Circular Avatar Icons */
 .member-avatar {
-  color: #ffffff;
+  color: var(--white-color);
   margin-right: -14px;
   position: relative;
   overflow: hidden;
   padding-bottom: 2px;
-  border: 3px solid #00a985;
+  border: 3px solid var(--teal-color);
   border-radius: 50%;
 }
 .member-avatar img {
@@ -1665,23 +1651,23 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 700;
   position: relative;
   z-index: 3;
-  border: 3px solid #00a985;
+  border: 3px solid var(--teal-color);
 }
 .member-count {
   font-size: 16px;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .btn-join-group {
   width: 100%;
-  background-color: #350073;
-  color: #ffffff;
+  background-color: var(--primary-color);
+  color: var(--white-color);
   border: none;
   padding: 16px;
   border-radius: 50px;
@@ -1776,7 +1762,7 @@ footer {
   padding: 7px 16px;
   border: 1px solid #f49ac4;
   border-radius: 8px;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: none;
   font-size: 18px;
   color: #333333;
@@ -1811,19 +1797,19 @@ footer {
   font-size: 19px;
   line-height: 1;
   font-weight: 600;
-  color: #350073;
+  color: var(--primary-color);
   transition: 0.2s ease;
 }
 
 .sign-in-btn {
-  background: #350073;
-  color: #ffffff;
+  background: var(--primary-color);
+  color: var(--white-color);
 }
 
 .sign-in-btn:hover,
 .sign-in-btn:focus {
-  background: #350073;
-  color: #ffffff;
+  background: var(--primary-color);
+  color: var(--white-color);
 }
 
 .account-content-area .create-btn {
@@ -1834,7 +1820,7 @@ footer {
 .account-content-area .create-btn:hover,
 .account-content-area .create-btn:focus {
   background: #8171b5;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .bottom-logos {
@@ -1954,7 +1940,7 @@ footer {
 }
 .otp-card {
   width: 100%;
-  background: #ffffff;
+  background: var(--white-color);
 }
 
 .otp-card h2 {
@@ -2155,7 +2141,7 @@ select.form-control option {
 }
 .create-account-content-area .create-btn {
   margin-top: 30px;
-  background: #350073;
+  background: var(--primary-color);
   color: #fff;
 }
 @media (max-width: 575px) {
@@ -2184,7 +2170,7 @@ select.form-control option {
 .progress-line {
   width: 100%;
   height: 8px;
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid var(--pink-color);
   border-radius: 10px;
   overflow: hidden;
@@ -2312,7 +2298,7 @@ select.form-control option {
   padding: 8px 15px;
   border: 1px solid #f3a4c8;
   border-radius: 7px;
-  background: #ffffff;
+  background: var(--white-color);
   cursor: pointer;
   user-select: none;
   transition:
@@ -2339,7 +2325,7 @@ select.form-control option {
   margin-right: 15px;
   border: 1px solid #f3a4c8;
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--white-color);
 
   display: flex;
   align-items: center;
@@ -2368,8 +2354,8 @@ select.form-control option {
   position: absolute;
   width: 7px;
   height: 4px;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
   transform: rotate(-45deg);
   top: 7px;
   left: 6px;
@@ -2382,7 +2368,7 @@ select.form-control option {
   width: 100%;
   max-width: 365px;
   padding: 10px 16px 15px;
-  background: #ffffff;
+  background: var(--white-color);
   z-index: 20;
 }
 
@@ -2392,7 +2378,7 @@ select.form-control option {
   border: none;
   border-radius: 25px;
   background: #4b008f;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
@@ -2453,7 +2439,7 @@ select.form-control option {
 
 .filter-pill.active,
 .filter-pill:hover {
-  background: #fed4e6;
+  background: var(--pink-light);
   color: #4d4d4d;
   border: 1px solid #f6a2c7;
 }
@@ -2480,7 +2466,7 @@ select.form-control option {
   gap: 8px;
   border: none;
   background: var(--primary-light);
-  color: #ffffff;
+  color: var(--white-color);
   padding: 9px 18px;
   border-radius: 14px;
   font-size: 18px;
@@ -2491,14 +2477,14 @@ select.form-control option {
 
 .sort-by-btn:hover {
   opacity: 0.85;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .sort-by-icon {
   display: inline-flex;
   align-items: center;
   gap: 0px;
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .sort-by-icon svg {
@@ -2534,7 +2520,7 @@ select.form-control option {
   padding: 12px;
   border: 1px solid var(--gray-light);
   border-radius: 12px;
-  background: #ffffff;
+  background: var(--white-color);
   transition:
     box-shadow 0.15s ease,
     border-color 0.15s ease;
@@ -2606,7 +2592,7 @@ select.form-control option {
   height: 38px;
   border-radius: 50%;
   background: var(--primary-color);
-  color: #ffffff;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2618,7 +2604,7 @@ select.form-control option {
 
 .job-card-arrow:hover {
   background: var(--primary-soft);
-  color: #ffffff;
+  color: var(--white-color);
   transform: translateX(2px);
 }
 
@@ -2682,8 +2668,8 @@ select.form-control option {
 .schedule-tab-btn {
   flex: 1;
   border: 1.5px solid var(--pink-color);
-  background: #ffffff;
-  color: #221e20;
+  background: var(--white-color);
+  color: var(--text-color);
   padding: 12px 16px;
   border-radius: 30px;
   font-size: 15px;
@@ -2698,7 +2684,7 @@ select.form-control option {
 .schedule-tab-btn.active {
   background: var(--pink-light);
   border-color: var(--pink-light);
-  color: #221e20;
+  color: var(--text-color);
 }
 
 /* =========================================
@@ -2789,7 +2775,7 @@ select.form-control option {
   height: 18px;
   border-radius: 50%;
   border: 2px solid var(--gray-color);
-  background: #ffffff;
+  background: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2806,7 +2792,7 @@ select.form-control option {
 
 .schedule-live-label {
   padding-top: 1px;
-  color: #221e20;
+  color: var(--text-color);
   font-size: 17px;
   font-weight: 800;
   transition: color 0.15s ease;
@@ -2857,7 +2843,7 @@ select.form-control option {
   margin: 4px 0;
   border-radius: 50%;
   border: 2px solid var(--gray-color);
-  background: #ffffff;
+  background: var(--white-color);
   transition: border-color 0.15s ease;
 }
 
@@ -2920,7 +2906,7 @@ select.form-control option {
   font-size: 13px;
   line-height: 1.5;
   font-weight: 500;
-  color: #221e20;
+  color: var(--text-color);
 }
 
 .schedule-card-arrow {
@@ -2931,7 +2917,7 @@ select.form-control option {
   height: 34px;
   border-radius: 50%;
   background: var(--primary-color);
-  color: #ffffff;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3040,7 +3026,7 @@ select.form-control option {
   overflow: hidden;
   border: 1px solid #c7c7c7;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  background-color: #ffffff;
+  background-color: var(--white-color);
   background-image:
     radial-gradient(
       ellipse 70% 55% at 100% 100%,
@@ -3147,7 +3133,7 @@ select.form-control option {
 }
 
 .chatbot-bubble {
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid #eceef2;
   border-radius: 20px 20px 4px 20px;
   padding: 12px 20px;
@@ -3169,7 +3155,7 @@ select.form-control option {
 
 .chatbot-suggestion-btn {
   border: 1.5px dashed var(--blue-color);
-  background: #ffffff;
+  background: var(--white-color);
   color: #14141c;
   padding: 10px 20px;
   border-radius: 30px;
@@ -3191,7 +3177,7 @@ select.form-control option {
   gap: 10px;
   margin: 14px 24px 24px;
   padding: 8px 8px 8px 20px;
-  background: #ffffff;
+  background: var(--white-color);
   border: 1.5px solid #bfe6f5;
   border-radius: 30px;
   box-shadow: 0 0 0 4px rgba(0, 170, 234, 0.08);
@@ -3217,7 +3203,7 @@ select.form-control option {
   border: none;
   border-radius: 50%;
   background: linear-gradient(135deg, var(--blue-light), var(--blue-color));
-  color: #ffffff;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3372,7 +3358,7 @@ select.form-control option {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(4px);
@@ -3390,7 +3376,7 @@ select.form-control option {
 }
 
 .photobooth-title {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 30px;
   font-weight: 800;
   line-height: 1.25;
@@ -3399,7 +3385,7 @@ select.form-control option {
 
 .photobooth-subtitle {
   width: 100%;
-  color: #d7d4e8;
+  color: var(--lavender-color);
   font-size: 15px;
   line-height: 1.5;
   max-width: 380px;
@@ -3467,7 +3453,7 @@ select.form-control option {
 }
 
 .photobooth-step-title {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 26px;
   font-weight: 800;
   margin-bottom: 28px;
@@ -3488,7 +3474,7 @@ select.form-control option {
   min-height: 52px;
   padding: 10px 14px;
   border-radius: 14px;
-  background: #ffffff;
+  background: var(--white-color);
   cursor: pointer;
   user-select: none;
   transition: background-color 0.15s ease;
@@ -3507,7 +3493,7 @@ select.form-control option {
   min-width: 20px;
   border: 1.5px solid var(--pink-color);
   border-radius: 50%;
-  background: #ffffff;
+  background: var(--white-color);
 }
 
 .gender-option__text {
@@ -3521,8 +3507,8 @@ select.form-control option {
 }
 
 .gender-option.is-selected .gender-option__check {
-  background: #ffffff;
-  border-color: #ffffff;
+  background: var(--white-color);
+  border-color: var(--white-color);
 }
 
 .gender-option.is-selected .gender-option__check::after {
@@ -3576,7 +3562,7 @@ select.form-control option {
 .style-option__label {
   display: block;
   margin-top: 10px;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 600;
 }
@@ -3606,8 +3592,8 @@ select.form-control option {
   position: absolute;
   width: 8px;
   height: 5px;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid var(--white-color);
+  border-bottom: 2px solid var(--white-color);
   transform: rotate(-45deg);
   top: 6px;
   left: 5px;
@@ -3747,7 +3733,7 @@ select.form-control option {
   justify-content: center;
   font-size: 96px;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--white-color);
   background: rgba(27, 0, 56, 0.35);
   text-shadow: 0 4px 18px rgba(0, 0, 0, 0.45);
   z-index: 2;
@@ -3775,7 +3761,7 @@ select.form-control option {
 .camera-flash {
   position: absolute;
   inset: 0;
-  background: #ffffff;
+  background: var(--white-color);
   opacity: 0;
   pointer-events: none;
   z-index: 3;
@@ -3805,7 +3791,7 @@ select.form-control option {
   gap: 10px;
   padding: 20px;
   text-align: center;
-  color: #d7d4e8;
+  color: var(--lavender-color);
 }
 
 .camera-placeholder[hidden] {
@@ -3827,7 +3813,7 @@ select.form-control option {
   margin-top: 4px;
   border: 1.5px solid var(--pink-color);
   background: transparent;
-  color: #ffffff;
+  color: var(--white-color);
   padding: 8px 20px;
   border-radius: 30px;
   font-size: 13px;
@@ -3875,7 +3861,7 @@ select.form-control option {
   height: 34px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.2);
-  color: #ffffff;
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3883,14 +3869,14 @@ select.form-control option {
 }
 
 .generation-allowance__label {
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 500;
 }
 
 .generation-allowance__value {
   margin-left: auto;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 14px;
   font-weight: 400;
   white-space: nowrap;
@@ -3916,7 +3902,7 @@ select.form-control option {
   border: 1.5px solid rgba(255, 255, 255, 0.5);
   border-radius: 44px;
   background: rgba(255, 255, 255, 0.08);
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -4060,7 +4046,7 @@ select.form-control option {
   gap: 10px;
   padding: 20px;
   text-align: center;
-  color: #d7d4e8;
+  color: var(--lavender-color);
 }
 
 .review-photo-placeholder[hidden] {
@@ -4136,7 +4122,7 @@ select.form-control option {
 
 .generate-status {
   margin-top: 28px;
-  color: #ffffff;
+  color: var(--white-color);
   font-size: 20px;
   font-weight: 800;
   line-height: 1.3;
@@ -4248,7 +4234,7 @@ select.form-control option {
   height: 10px;
   z-index: 2;
   pointer-events: none;
-  background: #ffffff;
+  background: var(--white-color);
   clip-path: polygon(
     50% 0%,
     62% 38%,
@@ -4393,7 +4379,7 @@ select.form-control option {
   --total-steps: 7;
   width: 100%;
   height: 8px;
-  background: #ffffff;
+  background: var(--white-color);
   border: 1px solid var(--pink-color);
   border-radius: 10px;
   overflow: hidden;
@@ -4614,7 +4600,7 @@ select.form-control option {
   display: flex;
   align-items: flex-start;
   gap: 12px;
-  background: #ffd1d0;
+  background: var(--pink-soft);
   border-radius: 12px;
   padding: 14px 16px;
   margin-bottom: 20px;
@@ -4812,7 +4798,7 @@ select.form-control option {
 
 .tone-option.is-selected {
   border-color: #f7bfd8;
-  background: #fed4e6;
+  background: var(--pink-light);
 }
 
 .tone-option.is-selected .tone-option-radio {
@@ -4896,7 +4882,7 @@ select.form-control option {
 }
 
 .job-detail-btn-container--stacked .start-building-btn {
-  background: #350073;
+  background: var(--primary-color);
 }
 
 .job-detail-btn-container--stacked .start-building-btn:hover {
@@ -4910,7 +4896,7 @@ select.form-control option {
   width: 100%;
   padding: 14px 20px;
   border-radius: 40px;
-  background: #7d6eae;
+  background: var(--primary-light);
   color: var(--white-color);
   font-size: 15px;
   font-weight: 600;
@@ -5128,7 +5114,7 @@ select.form-control option {
   font-weight: 800;
   border-radius: 10px;
   border: 1px solid #d3d3d3;
-  background: #ffffff;
+  background: var(--white-color);
   color: #db057c;
   display: flex;
   align-items: center;
@@ -5202,12 +5188,12 @@ select.form-control option {
   padding: 10px 20px;
   font-size: 16px;
   font-weight: 600;
-  color: #ffffff;
+  color: var(--white-color);
   letter-spacing: 1px;
   text-decoration: none;
   border: none;
   cursor: pointer;
-  background: #7d6eae;
+  background: var(--primary-light);
   border-radius: 40px;
   transition: color 0.15s ease;
   max-width: 708px;
@@ -5391,7 +5377,7 @@ select.form-control option {
 .qr-frame-off-title {
   font-size: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 8px;
 }
 
@@ -5514,7 +5500,7 @@ select.form-control option {
 .qr-native-dialog {
   width: 100%;
   max-width: 400px;
-  background: #ffffff;
+  background: var(--white-color);
   border-radius: 14px;
   padding: 22px 18px 16px;
   text-align: center;
