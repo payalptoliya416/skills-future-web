@@ -4102,10 +4102,6 @@ select.form-control option {
    GENERATING PAGE
 ========================================= */
 
-.generate-widget {
-  height: 100dvh;
-}
-
 .generate-widget .photobooth-header {
   padding: 35px 12px;
 }
